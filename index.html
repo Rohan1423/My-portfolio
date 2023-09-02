@@ -1,0 +1,258 @@
+<!--MY PORTFOLIO-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Portfolio</title>
+<style>
+  body {
+
+    position:relative;
+    background-color:rgb(246, 228, 211);
+  }
+.header {
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  position:fixed;
+  background-color:rgb(242, 191, 128);
+  top:0px;
+  left:0px;
+  right:0px;
+  height:80px;
+  border-width:0;
+  border-style:solid;
+  margin-left:-8px;
+  border-color:white;
+  flex-shrink:0;
+  justify-content:space-between;
+  font-size:20px;
+  z-index:100;
+}
+.left {
+   display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  flex-shrink:0;
+  
+}
+.bat {
+  display:inline-block;
+  height:50px;
+  width:50px;
+  border-radius:50px;
+  margin-right:10px;
+  margin-left:20px;
+  margin-top:5px;
+}
+.name-edit {
+  display:inline-block;
+  vertical-align:top;
+  font-style:arial;
+}
+.name-edit span {
+  font-weight:bold;
+}
+.right {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between; 
+  flex-shrink:0;
+}
+.right-buttons{
+  margin-left:10px;
+  margin-right:10px;
+}
+.right-buttons:hover {
+  text-decoration:underline;
+  cursor:pointer;
+}
+.rectangle {
+  display:flex;
+  margin-left:-8px;
+  height:800px;
+  width:500px;
+  margin-top:50px;
+  margin-bottom:100px;
+  background-color:rgb(213, 201, 160);
+  flex-shrink:0;
+
+  
+}
+.intro {
+  margin-top:100px;
+  display:flex;
+  flex-direction:column;
+  width:500px;
+  min-width:300px;
+  
+}
+.hi-edit {
+  font-size:50px;
+  font-weight:600;
+}
+.intro-who {
+  font-style:italic;
+  font-size:30px;
+}
+.intro-edit {
+  font-style:italic;
+  line-height:30px;
+  
+}
+.both {
+  display:flex;
+  position:relative;
+  flex:1;
+  column-gap:50px;
+}
+.float {
+  position:absolute;
+  display:flex;
+  flex-direction:column;
+  top:270px;
+  left:90px;
+  width:440px;
+  height:550px;
+  bottom:20px;
+  background-color:rgb(255, 241, 193);
+  z-index:0;
+  align-items:center;
+}
+.me {
+  margin-top:50px;
+  height:300px;
+  width:270px;
+  border-radius:150px;
+}
+.me-name {
+  font-size:30px;
+  margin-bottom:0;
+}
+.me-work {
+  font-style:italic;
+  font-size:20px;
+}
+.base {
+  display:flex;
+  flex-direction:row;
+  background-color:white;
+  width:100%;
+  height:55px;
+  margin-top:18px;
+  justify-content:center;
+  align-items:center;
+
+}
+.contain-img {
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items:center;
+}
+.insta {
+  height:35px;
+}
+.edit-insta {
+  background-color: white;
+  border-color:none;
+  border-style:solid;
+  border-width:0;
+ margin-bottom:0px;
+ margin-left:5px;
+ margin-right:5px;
+}
+.projects {
+  background-color: rgb(182, 182, 231);
+  color:rgb(0, 0, 0);
+  border-style:solid;
+  border-color:none;
+  border-width:0;
+  padding: 4px 5px;
+}
+.projects:hover {
+  cursor:pointer;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="left">
+    <a href="https://www.dc.com/characters/batman" target="_blank">
+      <img class="bat" src="images/download.jpeg">  
+    </a>
+    <p class="name-edit">
+    <span >Rohan Chauhan</span> / Front End Developer  
+    </p>
+  </div>
+  <div class="right">
+    <p class="right-buttons">
+    ABOUT ME
+    </p>
+    <P class="right-buttons">
+      <a href="file:///Users/rohanchauhan/Desktop/login/projects.html">
+    PROJECTS
+    </a>
+    </P>
+    <P class="right-buttons">
+    CONTACTS
+    </P>
+  </div>
+</div>
+<div class="both">
+<div class="rectangle">
+
+</div>
+<div class="intro">
+  <p class="hi-edit">
+    Hello
+  </p>
+   <p class="intro-who">
+    Here's who I am & what I do 
+   </p>
+    <p class="intro-pro">
+      <button class="projects">
+        <a href="file:///Users/rohanchauhan/Desktop/login/projects.html">
+          PROJECTS
+        </a>
+       
+      </button>
+    </p>
+     <p class="intro-edit">
+    My name is Rohan Chauhan. I'm a Btech student at JEMTEC Computer Science Department. I was born and raised in New Delhi.
+
+    I have decent knowledge about web development front-end and have good problem solving skills.
+
+    I like to travel. I believe travelling gives you a new perspective to everything. You get to know a lot about the different cultures, the cuisines, their history, the language and all the small unique things every place has to offer.
+     </p>
+</div>
+</div>
+<div class="float">
+  <div class="contain-img">
+    <img class="me" src="images/chauhan.jpeg">
+    <p class="me-name">
+      Rohan Chauhan
+    </p>
+    <p class="me-work">
+      Front End Developer
+    </p>
+  </div>
+  <div class="base">
+  <button class="edit-insta">
+    <img class="insta" src="images/download (2).png">
+    </button>
+    <button class="edit-insta">
+      <img class="insta" src="images/download (3).png">
+      </button>
+      <button class="edit-insta">
+      <a href="https://in.linkedin.com/in/rohan-chauhan-8ba43122b" target="_blank">
+        <img class="insta" src="images/download(1).png">
+      </a>
+        </button>
+        <button class="edit-insta">
+          <img class="insta" src="images/download.png">
+          </button>
+  </div>
+</div>
+</div>
+</body>
+</html>
